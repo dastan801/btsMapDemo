@@ -3,27 +3,41 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9119A5A523FC25DD00C91F27 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A5A423FC25DD00C91F27 /* AppCoordinator.swift */; };
+		9119A5A723FC274200C91F27 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A5A623FC274200C91F27 /* BaseViewController.swift */; };
+		9119A5A923FC275100C91F27 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A5A823FC275100C91F27 /* MapViewController.swift */; };
+		9119A5AB23FC27A100C91F27 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A5AA23FC27A100C91F27 /* MapView.swift */; };
+		9119A5AD23FC2BD500C91F27 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A5AC23FC2BD500C91F27 /* Strings.swift */; };
 		911CE60D23FBD3F000C83856 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911CE60C23FBD3F000C83856 /* AppDelegate.swift */; };
-		911CE60F23FBD3F000C83856 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911CE60E23FBD3F000C83856 /* SceneDelegate.swift */; };
-		911CE61123FBD3F000C83856 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911CE61023FBD3F000C83856 /* ViewController.swift */; };
-		911CE61423FBD3F000C83856 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 911CE61223FBD3F000C83856 /* Main.storyboard */; };
 		911CE61623FBD3F100C83856 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 911CE61523FBD3F100C83856 /* Assets.xcassets */; };
 		911CE61923FBD3F100C83856 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 911CE61723FBD3F100C83856 /* LaunchScreen.storyboard */; };
+		911CE62123FBD44600C83856 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911CE62023FBD44600C83856 /* BaseView.swift */; };
+		91B8910823FC305F00F04947 /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B8910723FC305F00F04947 /* InputField.swift */; };
+		91B8910A23FC370300F04947 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B8910923FC370300F04947 /* SearchViewController.swift */; };
+		FEE12697242C407E09527715 /* Pods_BtsMapDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E90D9FF8071E796810839 /* Pods_BtsMapDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		908E90D9FF8071E796810839 /* Pods_BtsMapDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BtsMapDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9119A5A423FC25DD00C91F27 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		9119A5A623FC274200C91F27 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		9119A5A823FC275100C91F27 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		9119A5AA23FC27A100C91F27 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		9119A5AC23FC2BD500C91F27 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		911CE60923FBD3F000C83856 /* BtsMapDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BtsMapDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		911CE60C23FBD3F000C83856 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		911CE60E23FBD3F000C83856 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		911CE61023FBD3F000C83856 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		911CE61323FBD3F000C83856 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		911CE61523FBD3F100C83856 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		911CE61823FBD3F100C83856 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		911CE61A23FBD3F100C83856 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		911CE62023FBD44600C83856 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		91B8910723FC305F00F04947 /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
+		91B8910923FC370300F04947 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		E1D13049A55AB56A7A0977E8 /* Pods-BtsMapDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BtsMapDemo.release.xcconfig"; path = "Target Support Files/Pods-BtsMapDemo/Pods-BtsMapDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E8F3CDD83FD22CEFE940089E /* Pods-BtsMapDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BtsMapDemo.debug.xcconfig"; path = "Target Support Files/Pods-BtsMapDemo/Pods-BtsMapDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,91 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEE12697242C407E09527715 /* Pods_BtsMapDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E3020148492C7734CB4B990 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				908E90D9FF8071E796810839 /* Pods_BtsMapDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D1F85C8F735E85703A0089B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8F3CDD83FD22CEFE940089E /* Pods-BtsMapDemo.debug.xcconfig */,
+				E1D13049A55AB56A7A0977E8 /* Pods-BtsMapDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9119A5AE23FC2E4400C91F27 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				911CE61523FBD3F100C83856 /* Assets.xcassets */,
+				911CE61723FBD3F100C83856 /* LaunchScreen.storyboard */,
+				911CE61A23FBD3F100C83856 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9119A5AF23FC2E5B00C91F27 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				911CE62023FBD44600C83856 /* BaseView.swift */,
+				9119A5A623FC274200C91F27 /* BaseViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9119A5B023FC2E6E00C91F27 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9119A5A823FC275100C91F27 /* MapViewController.swift */,
+				91B8910923FC370300F04947 /* SearchViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9119A5B123FC2E7D00C91F27 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9119A5AA23FC27A100C91F27 /* MapView.swift */,
+				91B8910723FC305F00F04947 /* InputField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9119A5B223FC2E8A00C91F27 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				911CE60C23FBD3F000C83856 /* AppDelegate.swift */,
+				9119A5A423FC25DD00C91F27 /* AppCoordinator.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9119A5B323FC2E9500C91F27 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9119A5AC23FC2BD500C91F27 /* Strings.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		911CE60023FBD3F000C83856 = {
 			isa = PBXGroup;
 			children = (
 				911CE60B23FBD3F000C83856 /* BtsMapDemo */,
 				911CE60A23FBD3F000C83856 /* Products */,
+				5D1F85C8F735E85703A0089B /* Pods */,
+				0E3020148492C7734CB4B990 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +144,12 @@
 		911CE60B23FBD3F000C83856 /* BtsMapDemo */ = {
 			isa = PBXGroup;
 			children = (
-				911CE60C23FBD3F000C83856 /* AppDelegate.swift */,
-				911CE60E23FBD3F000C83856 /* SceneDelegate.swift */,
-				911CE61023FBD3F000C83856 /* ViewController.swift */,
-				911CE61223FBD3F000C83856 /* Main.storyboard */,
-				911CE61523FBD3F100C83856 /* Assets.xcassets */,
-				911CE61723FBD3F100C83856 /* LaunchScreen.storyboard */,
-				911CE61A23FBD3F100C83856 /* Info.plist */,
+				9119A5B223FC2E8A00C91F27 /* App */,
+				9119A5B123FC2E7D00C91F27 /* Views */,
+				9119A5B023FC2E6E00C91F27 /* Controllers */,
+				9119A5AF23FC2E5B00C91F27 /* Common */,
+				9119A5AE23FC2E4400C91F27 /* Supporting Files */,
+				9119A5B323FC2E9500C91F27 /* Extensions */,
 			);
 			path = BtsMapDemo;
 			sourceTree = "<group>";
@@ -74,9 +161,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 911CE61D23FBD3F100C83856 /* Build configuration list for PBXNativeTarget "BtsMapDemo" */;
 			buildPhases = (
+				2B7827D1BD4561781A91DDEE /* [CP] Check Pods Manifest.lock */,
 				911CE60523FBD3F000C83856 /* Sources */,
 				911CE60623FBD3F000C83856 /* Frameworks */,
 				911CE60723FBD3F000C83856 /* Resources */,
+				7954F24150282CD3F6644581 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,34 +216,73 @@
 			files = (
 				911CE61923FBD3F100C83856 /* LaunchScreen.storyboard in Resources */,
 				911CE61623FBD3F100C83856 /* Assets.xcassets in Resources */,
-				911CE61423FBD3F000C83856 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B7827D1BD4561781A91DDEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BtsMapDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7954F24150282CD3F6644581 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BtsMapDemo/Pods-BtsMapDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BtsMapDemo/Pods-BtsMapDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BtsMapDemo/Pods-BtsMapDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		911CE60523FBD3F000C83856 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				911CE61123FBD3F000C83856 /* ViewController.swift in Sources */,
+				9119A5AD23FC2BD500C91F27 /* Strings.swift in Sources */,
+				9119A5AB23FC27A100C91F27 /* MapView.swift in Sources */,
 				911CE60D23FBD3F000C83856 /* AppDelegate.swift in Sources */,
-				911CE60F23FBD3F000C83856 /* SceneDelegate.swift in Sources */,
+				91B8910A23FC370300F04947 /* SearchViewController.swift in Sources */,
+				9119A5A523FC25DD00C91F27 /* AppCoordinator.swift in Sources */,
+				911CE62123FBD44600C83856 /* BaseView.swift in Sources */,
+				9119A5A723FC274200C91F27 /* BaseViewController.swift in Sources */,
+				9119A5A923FC275100C91F27 /* MapViewController.swift in Sources */,
+				91B8910823FC305F00F04947 /* InputField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		911CE61223FBD3F000C83856 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				911CE61323FBD3F000C83856 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		911CE61723FBD3F100C83856 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,11 +410,12 @@
 		};
 		911CE61E23FBD3F100C83856 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8F3CDD83FD22CEFE940089E /* Pods-BtsMapDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H76BX9U7SH;
-				INFOPLIST_FILE = BtsMapDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BtsMapDemo/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +429,12 @@
 		};
 		911CE61F23FBD3F100C83856 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1D13049A55AB56A7A0977E8 /* Pods-BtsMapDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H76BX9U7SH;
-				INFOPLIST_FILE = BtsMapDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BtsMapDemo/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
