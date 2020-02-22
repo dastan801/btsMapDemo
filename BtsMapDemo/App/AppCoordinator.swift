@@ -13,12 +13,8 @@ class AppCoordinator: NSObject {
 
     private var window: UIWindow?
 
-    init(window: inout UIWindow?, scene: UIWindowScene? = nil) {
-        if let scene = scene {
-            window = UIWindow(windowScene: scene)
-        } else {
-            window = UIWindow(frame: UIScreen.main.bounds)
-        }
+    init(window: inout UIWindow?) {
+        window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
         window?.makeKeyAndVisible()
         self.window = window

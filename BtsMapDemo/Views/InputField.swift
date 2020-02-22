@@ -23,7 +23,7 @@ class InputField: BaseView {
 
     private lazy var textLabel: UILabel = {
         let label = UILabel()
-        label.textColor = .black
+        label.textColor = .white
         label.font = .systemFont(ofSize: 14, weight: .medium)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Test"
@@ -37,11 +37,15 @@ class InputField: BaseView {
         super.init(frame: .zero)
     }
 
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
     override func setupViews() {
         super.setupViews()
         setupGesture()
+        setupAppearance()
         textLabel.text = type.rawValue
-        backgroundColor = .white
         translatesAutoresizingMaskIntoConstraints = false
         addSubview(textLabel)
         updateConstraints()
@@ -51,13 +55,18 @@ class InputField: BaseView {
         addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
     }
 
+    private func setupAppearance() {
+        backgroundColor = .black
+        cornerRadius(8)
+    }
+
     override func updateConstraints() {
         super.updateConstraints()
         let constraints = [
             textLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 12),
             textLabel.topAnchor.constraint(equalTo: topAnchor, constant: 12),
             textLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -12),
-            textLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -12),
+            textLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -12)
         ]
         NSLayoutConstraint.activate(constraints)
     }
@@ -67,8 +76,8 @@ class InputField: BaseView {
         delegate?.didTap(on: self, with: type)
     }
 
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    func setTitle(_ title: String?) {
+        textLabel.text = title
     }
 
 }

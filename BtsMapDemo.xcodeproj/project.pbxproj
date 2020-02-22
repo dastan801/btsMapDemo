@@ -16,6 +16,9 @@
 		911CE61623FBD3F100C83856 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 911CE61523FBD3F100C83856 /* Assets.xcassets */; };
 		911CE61923FBD3F100C83856 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 911CE61723FBD3F100C83856 /* LaunchScreen.storyboard */; };
 		911CE62123FBD44600C83856 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911CE62023FBD44600C83856 /* BaseView.swift */; };
+		9152E5972401172F005F2216 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152E5962401172F005F2216 /* UIView.swift */; };
+		9154BA1B23FF9B48004287E8 /* Reuseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9154BA1A23FF9B48004287E8 /* Reuseable.swift */; };
+		9154BA1D23FF9B84004287E8 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9154BA1C23FF9B84004287E8 /* BaseTableViewCell.swift */; };
 		91B8910823FC305F00F04947 /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B8910723FC305F00F04947 /* InputField.swift */; };
 		91B8910A23FC370300F04947 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B8910923FC370300F04947 /* SearchViewController.swift */; };
 		FEE12697242C407E09527715 /* Pods_BtsMapDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E90D9FF8071E796810839 /* Pods_BtsMapDemo.framework */; };
@@ -34,6 +37,9 @@
 		911CE61823FBD3F100C83856 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		911CE61A23FBD3F100C83856 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		911CE62023FBD44600C83856 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		9152E5962401172F005F2216 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		9154BA1A23FF9B48004287E8 /* Reuseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reuseable.swift; sourceTree = "<group>"; };
+		9154BA1C23FF9B84004287E8 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		91B8910723FC305F00F04947 /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
 		91B8910923FC370300F04947 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		E1D13049A55AB56A7A0977E8 /* Pods-BtsMapDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BtsMapDemo.release.xcconfig"; path = "Target Support Files/Pods-BtsMapDemo/Pods-BtsMapDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -84,6 +90,8 @@
 			children = (
 				911CE62023FBD44600C83856 /* BaseView.swift */,
 				9119A5A623FC274200C91F27 /* BaseViewController.swift */,
+				9154BA1A23FF9B48004287E8 /* Reuseable.swift */,
+				9154BA1C23FF9B84004287E8 /* BaseTableViewCell.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -119,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				9119A5AC23FC2BD500C91F27 /* Strings.swift */,
+				9152E5962401172F005F2216 /* UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -268,10 +277,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9154BA1B23FF9B48004287E8 /* Reuseable.swift in Sources */,
 				9119A5AD23FC2BD500C91F27 /* Strings.swift in Sources */,
 				9119A5AB23FC27A100C91F27 /* MapView.swift in Sources */,
 				911CE60D23FBD3F000C83856 /* AppDelegate.swift in Sources */,
+				9152E5972401172F005F2216 /* UIView.swift in Sources */,
 				91B8910A23FC370300F04947 /* SearchViewController.swift in Sources */,
+				9154BA1D23FF9B84004287E8 /* BaseTableViewCell.swift in Sources */,
 				9119A5A523FC25DD00C91F27 /* AppCoordinator.swift in Sources */,
 				911CE62123FBD44600C83856 /* BaseView.swift in Sources */,
 				9119A5A723FC274200C91F27 /* BaseViewController.swift in Sources */,
@@ -416,6 +428,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H76BX9U7SH;
 				INFOPLIST_FILE = "$(SRCROOT)/BtsMapDemo/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -423,7 +436,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kz.zapis.BtsMapDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -435,6 +448,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H76BX9U7SH;
 				INFOPLIST_FILE = "$(SRCROOT)/BtsMapDemo/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -442,7 +456,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kz.zapis.BtsMapDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

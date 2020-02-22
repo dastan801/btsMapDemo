@@ -14,11 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    private lazy var coordinator = AppCoordinator(window: &window)
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let coordinator = AppCoordinator(window: &window)
         coordinator.configure()
         return true
     }
 
 }
-
